@@ -3,6 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "gitHooks": {
+    "pre-commit": "npm run lint",
+    "pre-push": "npm run test"
+  },
   "scripts": {
     "start": "vite",
     "build": "vue-tsc -b && vite build",
