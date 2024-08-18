@@ -11,7 +11,12 @@
 </template>
 
 <script setup lang="ts">
+import { useColorTheme } from '@/composables/theme'
 import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'
+
+const { setColorTheme } = useColorTheme()
+
+setColorTheme()
 </script>
 
 <style scoped>
