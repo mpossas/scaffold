@@ -11,7 +11,7 @@ $ npm i
 ## Running
 
 ``` bash
-$ npm run dev
+$ npm start
 ```
 
 ``` bash
