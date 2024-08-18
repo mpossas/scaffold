@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils'
+import { createTestingPinia } from '@pinia/testing'
 import i18n from '@/config/i18n'
 
 export const mountComponent = (
@@ -8,7 +9,7 @@ export const mountComponent = (
   return mount(Component, {
     props,
     global: {
-      plugins: [i18n]
+      plugins: [i18n, createTestingPinia({ stubActions: false })]
     }
   })
 }

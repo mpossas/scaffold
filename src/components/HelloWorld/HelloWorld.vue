@@ -27,11 +27,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { storeToRefs } from 'pinia'
+import { useBaseStore } from '@/store'
 
 defineProps<{ msg: string }>()
 
-const count = ref(0)
+const { count } = storeToRefs(useBaseStore())
 </script>
 
 <style scoped>
