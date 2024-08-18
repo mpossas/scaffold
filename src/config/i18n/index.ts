@@ -9,5 +9,5 @@ export default createI18n({
     en,
     pt
   },
-  legacy: false,
+  legacy: false
 })

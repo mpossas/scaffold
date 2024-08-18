@@ -1,5 +1,5 @@
-import { mountComponent } from "@/utils/tests"
-import HelloWorld from "./HelloWorld.vue"
+import { mountComponent } from '@/utils/tests'
+import HelloWorld from './HelloWorld.vue'
 
 describe('HelloWorld', () => {
   it('updates counter on button click', async () => {

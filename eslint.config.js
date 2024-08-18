@@ -1,6 +1,7 @@
 import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import pluginVue from 'eslint-plugin-vue'
+import pluginPrettier from 'eslint-plugin-prettier/recommended'
 
 export default [
   eslint.configs.recommended,
@@ -13,5 +14,6 @@ export default [
         parser: '@typescript-eslint/parser'
       }
     }
-  }
+  },
+  pluginPrettier
 ]
